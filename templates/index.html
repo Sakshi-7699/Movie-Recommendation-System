@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <title>Movie Recommendation System</title>
+    <style> 
+        .jumbotron-image 
+        {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="jumbotron jumbotron-fluid text-center text-white jumbotron-image shadow"
+        style="background-image: 
+        url(https://i.pinimg.com/564x/dd/03/35/dd0335440224ed50a35045cd3aaf29b2.jpg)">
+            <div class="container">
+              <h1 class="display-4" style="color: white;">Movie Recommendation System</h1>
+              <p class="lead" style="color: whitesmoke;">using Collaborative Filtering Model</p>
+            </div>
+          </div>
+    </header>
+
+    <form method ='post' enctype=multipart/form-data>
+        <div class="form-group text-center" style="margin-left: 330px;margin-right: 330px; margin-bottom: 100px;">
+            <input class="form-control form-control-lg text-center" type="text" placeholder="Enter a Movie" name='name' >
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-outline-primary btn-lg"
+            name="Predict" value="Predict">Predict</button>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Movies</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style> 
+        .jumbotron-image 
+        {
+            background-position: right;
+            background-repeat: no-repeat;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="jumbotron jumbotron-fluid text-white jumbotron-image shadow"
+        style="background-image: 
+        url(https://i.pinimg.com/originals/8b/51/68/8b5168873a2cddcdee83c662ea0ed261.png)">
+            <div class="container">
+              <h1 class="display-4" style="color: rgb(10, 197, 253);">Recommendations</h1>
+            </div>
+          </div>
+    </header>
+
+    <container>       
+                
+        <ul class="list-group text-center">
+            <h3>Recommendations based on <b>{{your_list[0]}}</b></h3>
+            {%for i in range(1,6) %}  
+            <li class="list-group-item">
+                <h4>{{your_list[i]}}</h4>
+            </li>
+            {%endfor%}
+        </ul>  
+
+    </container>
+</body>
+</html>
